@@ -51,5 +51,18 @@ switch( oper )
                         else
                             printf("Nao existe divisao por 0\n\n");
                         break;
+           	case '%':
+                        printf("%d\n\n", (int)num1 % (int)num2);
+                        break;
+
+                default:
+                        if(num1 != 0 && oper != '0' && num2 != 0)
+                            printf(" Operador invalido\n\n ");
+                        else
+                            printf(" Fechando calculadora!\n ");
+            }
+
+        }while(num1 != 0 && oper != '0' && num2 != 0);
+
 
 
